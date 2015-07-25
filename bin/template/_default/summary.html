@@ -1,0 +1,9 @@
+<article>
+    <header>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a>
+				<small><time class="li-article-date">{{ .WriteDate.Format "2006年01月02日 15:04:05" }}</time>
+				</small>
+</h2>
+		    </header>
+			<div class="tags-list"><span class="glyphicon glyphicon-tags"></span>{{ range .Tags}}<a class="tag-link" href="/tags/{{.}}">{{.}}</a>{{end}}</div>
+</article>
